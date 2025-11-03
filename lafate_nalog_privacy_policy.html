@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Politika privatnosti – Lafat E-Nalog</title>
+    <style>
+        body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;line-height:1.6;margin:0;background:#f8fafc;color:#0f172a}
+        header{background:#0f766e;color:#fff;padding:28px 20px}
+        main{max-width:980px;margin:0 auto;padding:24px}
+        h1{margin:0 0 8px}
+        h2{margin-top:28px}
+        .card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:18px;margin:16px 0}
+        a{color:#0ea5e9}
+        footer{margin:32px 0 12px;color:#475569}
+    </style>
+</head>
+<body>
+<header>
+    <h1>Politika privatnosti</h1>
+    <div><strong>Lafat E-Nalog</strong></div>
+</header>
+<main>
+    <p>Ova Politika privatnosti objašnjava koje podatke prikupljamo putem mobilne aplikacije <strong>Lafat E-Nalog</strong>, kako ih koristimo i koja prava imate. Korištenjem aplikacije slažete se s ovom Politikom.</p>
+
+    <div class="card">
+        <h2>1) Voditelj obrade i kontakt</h2>
+        <p>Voditelj obrade: <strong>Lafat Commerce d.o.o.</strong><br>
+            Kontakt za privatnost: <a href="mailto:support@lafat.com">support@lafat.com</a></p>
+    </div>
+
+    <div class="card">
+        <h2>2) Koje podatke prikupljamo</h2>
+        <ul>
+            <li><strong>Podaci o nalogu</strong>: e-mail adresa i UID korisnika (Firebase Auth).</li>
+            <li><strong>Sadržaj koji dodate</strong>: fotografije i podaci o servisnim nalozima (Firebase Storage / Firestore).</li>
+            <li><strong>Tehnički logovi</strong>: datum, verzija, pogreške.</li>
+        </ul>
+        <p><em>Ne</em> prikupljamo lokaciju, kontakte ni SMS.</p>
+    </div>
+
+    <div class="card">
+        <h2>3) Svrha i pravni osnov</h2>
+        <ul>
+            <li>Prijava korisnika i upravljanje servisnim nalozima.</li>
+            <li>Praćenje garancija i internih servisa.</li>
+            <li>Sigurnost sistema i sprječavanje zloupotreba.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>4) Servisi trećih strana</h2>
+        <ul>
+            <li>Firebase Authentication – autentifikacija korisnika</li>
+            <li>Cloud Firestore – pohrana podataka</li>
+            <li>Firebase Storage – pohrana slika</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>5) Dijeljenje i sigurnost podataka</h2>
+        <p>Podaci se dijele samo sa servisima nužnim za rad aplikacije i štite TLS enkripcijom u prijenosu.</p>
+    </div>
+
+    <footer>© <span id="yr"></span> Lafat Commerce. Sva prava zadržana.</footer>
+</main>
+<script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
